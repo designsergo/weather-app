@@ -13,7 +13,7 @@ const Weather = props => (
       )}
     {props.temperature && (
       <p className="weather__key">
-        Temperature: <span className="weather__value">{props.temperature}</span>
+        Temperature (°C): <span className="weather__value">{props.temperature}</span>
       </p>
     )}
     
@@ -26,13 +26,13 @@ const Weather = props => (
          
             {props.direction && (
               <p className="weather__key">
-                direction: <span className="weather__value">{props.direction}</span>
+                direction: <span className="weather__value">{props.direction}˚</span>
               </p>
             )}
          
             {props.speed && (
               <p className="weather__key">
-                speed: <span className="weather__value">{props.speed}</span>
+                speed (m/s): <span className="weather__value">{props.speed}</span>
               </p>
             )}
 
@@ -40,7 +40,9 @@ const Weather = props => (
 
     <table className="table-table">
             <tr>
-              <th className="wind">day</th>
+              <th className="wind">
+              
+              day</th>
               <td>{props.day && (
                 <p className="weather__key">
                   <span className="weather__value">{props.day}
@@ -73,27 +75,27 @@ const Weather = props => (
               <th className="wind">high</th>
               <td>{props.high && (
             <p className="weather__key">
-              <span className="weather__value">{props.high}</span>
+              <span className="weather__value">{props.high}˚</span>
             </p>
           )}</td>
               <td>{props.high1 && (
             <p className="weather__key">
-              <span className="weather__value">{props.high1}</span>
+              <span className="weather__value">{props.high1}˚</span>
             </p>
           )}</td>
           <td>{props.high2 && (
             <p className="weather__key">
-              <span className="weather__value">{props.high2}</span>
+              <span className="weather__value">{props.high2}˚</span>
             </p>
           )}</td>
           <td>{props.high3 && (
             <p className="weather__key">
-              <span className="weather__value">{props.high3}</span>
+              <span className="weather__value">{props.high3}˚</span>
             </p>
           )}</td>
           <td>{props.high4 && (
             <p className="weather__key">
-              <span className="weather__value">{props.high4}</span>
+              <span className="weather__value">{props.high4}˚</span>
             </p>
           )}</td>
             </tr>
@@ -102,27 +104,28 @@ const Weather = props => (
               <th className="wind">low</th>
               <td>
                 {props.low && (
-                <p className="weather__key"><span className="weather__value">{props.low}</span></p>
+                <p className="weather__key"><span className="weather__value">{props.low}˚</span></p>
                 )} 
             </td>
               <td>
               {props.low1 && (
-                <p className="weather__key"><span className="weather__value">{props.low1}</span></p>
+                <p className="weather__key"><span className="weather__value">{props.low1}˚</span></p>
               )}
           </td>
           <td>
               {props.low2 && (
-                <p className="weather__key"><span className="weather__value">{props.low2}</span></p>
+                <p className="weather__key"><span className="weather__value">{props.low2}˚</span></p>
               )}
           </td>
           <td>
               {props.low3 && (
-                <p className="weather__key"><span className="weather__value">{props.low3}</span></p>
+                <p className="weather__key"><span className="weather__value">{props.low3}˚</span></p>
               )}
           </td>
           <td>
+            
               {props.low4 && (
-                <p className="weather__key"><span className="weather__value">{props.low4}</span></p>
+                <p className="weather__key"><span className="weather__value">{props.low4}˚</span></p>
               )}
           </td>
             </tr>
