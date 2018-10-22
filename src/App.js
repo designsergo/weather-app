@@ -82,8 +82,7 @@ class App extends React.Component {
         day4: undefined,
         high3: undefined,
         low3: undefined,
-        
-        
+
         error: "Please enter the value."
       });
     }
@@ -98,6 +97,8 @@ class App extends React.Component {
                 <div className="col-xs-5 title-container">
                   <Titles />
                 </div>
+                const windspdeed =new speed(speed/3.6);
+                
                 <div className="col-xs-7 form-container">
                   <Form getWeather={this.getWeather} />
                   <Weather
@@ -108,7 +109,7 @@ class App extends React.Component {
                     description={this.state.description}
                     chill={this.state.chill}
                     direction={this.state.direction}
-                    speed={this.state.speed}
+                    speed={Math.round(parseInt(this.state.speed) /3.6)}
                     day={this.state.day}
                     day1={this.state.day1}
                     day2={this.state.day2}
