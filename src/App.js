@@ -97,7 +97,6 @@ class App extends React.Component {
                 <div className="col-xs-5 title-container">
                   <Titles />
                 </div>
-                const windspdeed =new speed(speed/3.6);
                 
                 <div className="col-xs-7 form-container">
                   <Form getWeather={this.getWeather} />
